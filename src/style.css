@@ -1,0 +1,44 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('https://img.freepik.com/free-photo/top-view-office-stationery-with-notebook-calculator_23-2148524779.jpg?w=740&t=st=1723785503~exp=1723786103~hmac=5a01e0e7e7c264056770e6902d0ecdefd41963ff7f5249bd3319088ed24580ae');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: backgroundAnimation 15s infinite alternate; /* Applying the animation */
+  }
+  
+  h1 {
+    color: #040e69;
+  }
+  p {
+    color: #72160a;
+    font-weight: bold;
+  }
+  input, button {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input:focus, button:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Keyframes for the background animation */
+  @keyframes backgroundAnimation {
+    0% {
+      background-size: 100%; /* Start with the normal size */
+      background-position: center center; /* Start at the center */
+    }
+    50% {
+      background-size: 110%; /* Zoom in slightly */
+      background-position: center top; /* Shift position upwards */
+    }
+    100% {
+      background-size: 100%; /* Return to normal size */
+      background-position: center center; /* Return to the center */
+    }
+  }
+  
